@@ -4,4 +4,4 @@ jobs:
   build: 
     runs-on: poc_runner # label of the runner
     steps: 
-      - run: echo "Hello build!"
+      - run: echo "Hello build@!"
