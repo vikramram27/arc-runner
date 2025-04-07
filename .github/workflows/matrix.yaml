@@ -1,16 +1,7 @@
-name: Matrix
-
 on:
-  workflow_dispatch:
-
+  push:
 jobs:
-  run-matrix:
-    strategy:
-      matrix:
-        os: ["arc-runner-set"]
-        version: [1, 2, 3]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - name: simple
-        run: |
-          echo "Hello from: ${{ matrix.version }}"
+  build: 
+    runs-on: poc_runner # label of the runner
+    steps: 
+      - run: echo "Hello build!"
