@@ -2,6 +2,6 @@ on:
   push:
 jobs:
   build: 
-    runs-on: poc_runner # label of the runner
+    runs-on: arc_runner # label of the runner
     steps: 
       - run: echo "Hello build@!"
